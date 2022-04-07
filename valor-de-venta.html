@@ -16,42 +16,53 @@
 
 <body>
 
-    <!-- Navbar / Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">SGIV - <span class="h6"><i>Sistema de Gestión de Inventarios y
-                        Ventas</i></span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Administrador</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inventario</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Utilidades
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="valor-de-venta.html">Valor de Venta</a></li>
-                            <li><a class="dropdown-item" href="#">Utilidad 2</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Utilidad 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar / Menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand"  style="background-color: #FFAD60; "href="index.html">SGIV - <span class="h6"> <i>Sistema de Gestión de Inventarios y Ventas</i></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" style="background-color: #96CEB4;" href="#">Administrador</a>
+                </li>
+
+                    <div class="input-group">
+                     <button class="btn btn-outline-secondary dropdown-toggle" style="background-color: #FFEEAD;" type="button" data-bs-toggle="dropdown" aria-expanded="false">Inventario</button>
+                     <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Ingresar_ producto.html">Ingresar producto</a></l>
+                                       <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="Actualizar_producto.html">Actualizar producto</a></li>
+                                      <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="Eliminar_producto.html">Eliminar producto</a></li>
+                                 <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="Consultar_ producto.html">Consultar producto</a></li>
+                     </ul>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" style="background-color: #D9534F;" aria-expanded="false"> 
+                        Utilidades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="valor-de-venta.html">Valor de Venta</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="calculadoraVentaGanancia.js">Tamaño de datos</a></li>
+
+                        
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </nav>
+
+    </div>
+</nav>
     <!-- Formulario para calcular los diferentes valores.  -->
     <div class="px-5 py-3">
         <h1 class="text-center">Calculadora de valor de Venta y Ganancia</h1>
@@ -107,6 +118,10 @@
                     <input type="text" class="form-control" id="ganancia" readonly>
                 </div>
             </div>
+
+            
+<button class="btn btn-primary" onclick="location.href='index.html'" >Regresar</button>
+
 
     </div>
 
